@@ -9,7 +9,7 @@ class Solution {
             fast=findSquare(fast);
 
         }while(slow!=fast);
-            return slow==1;
+        return slow==1;
     }  
 
     public int findSquare(int n){
