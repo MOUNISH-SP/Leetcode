@@ -2,14 +2,14 @@ class Solution {
     public boolean isSubsequence(String s, String t) {
         int x=s.length();
         int y=t.length();
-
-        int i=0;
-        for(int j=0;j<y&& i<x;j++){
-            if(t.charAt(j)==s.charAt(i)){
-                i++;
+   
+        int l=0;
+        for(int r=0; r<y && l<x ;r++){
+            if(t.charAt(r)==s.charAt(l)){
+                l++;
             }
         }
-        return i==x;
+        return l==x;
 
 
         //we should use the teopointer like the first pointer in the first sting and second pointer in the seocnd sting 
